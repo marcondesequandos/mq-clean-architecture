@@ -59,7 +59,7 @@ describe('Teste integration update product usa case', () => {
         const updatedProduct = usecase.execute(input)
 
         await expect(updatedProduct)
-            .rejects.toThrow("Cannot read property 'id' of null");
+            .rejects.toThrow("Cannot read properties of null (reading 'id')");
     });
 
 });
